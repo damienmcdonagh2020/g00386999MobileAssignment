@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <button>
+      <ion-back-button></ion-back-button>
+     </button>
+    <ion-title>status</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title> {{myStatus}}</ion-title>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="myStatus">
+      <ion-list-header>
+        <ion-label>Towns</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Tuam</ion-label>
+        <ion-radio slot="start" value="tuam"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Oranmore</ion-label>
+        <ion-radio slot="start" value="oranmore"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Clifden</ion-label>
+        <ion-radio slot="start" value="clifden"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Dunmore</ion-label>
+        <ion-radio slot="start" value="dunmore"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Loughrea</ion-label>
+        <ion-radio slot="start" value="loughrea"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="SaveStatus()">Save town</ion-button>
+</ion-content>

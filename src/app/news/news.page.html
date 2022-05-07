@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+      <button>
+        <ion-back-button></ion-back-button>
+       </button>
+    <ion-title>Irish News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h1>NEWS</h1>
+
+<ion-card>
+  <ion-card-header *ngFor="let news of NewsData">
+    <img src="{{news.urlToImage}}">
+    <ion-card-subtitle>{{news.title}}</ion-card-subtitle>
+    <ion-card-title>{{news.publishedAt}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Keep close to Nature's heart... and break clear away, once in awhile,
+    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+  </ion-card-content>
+</ion-card>
+</ion-content>
